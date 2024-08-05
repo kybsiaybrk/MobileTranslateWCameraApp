@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.CameraActivity">
+
+  <androidx.camera.view.PreviewView
+      android:id="@+id/previewView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+  <com.example.bitirmeproje.presentation.OverlayView
+      android:id="@+id/overlayView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:background="@android:color/black"
+      android:backgroundTint="#00FFFFFF"
+      android:textColor="@android:color/white"
+      android:textSize="18sp"
+      android:gravity="center"
+      android:ellipsize="none"
+      android:maxLines="8"
+      android:singleLine="false"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageButton
+      android:id="@+id/stopButton"
+      android:layout_width="75dp"
+      android:layout_height="75dp"
+      android:background="#00FFFFFF"
+      android:backgroundTint="#00FFFFFF"
+
+      android:scaleType="centerInside"
+      android:src="@drawable/btn_3"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.9" />
+
+
+  <ImageButton
+      android:visibility="invisible"
+      android:id="@+id/sendButton"
+      android:layout_width="75dp"
+      android:layout_height="75dp"
+      android:background="#00FFFFFF"
+      android:backgroundTint="#00FFFFFF"
+      android:scaleType="centerInside"
+      android:src="@drawable/onay"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.75"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.9" />
+  
+
+
+
+    <ImageButton
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        android:id="@+id/reButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/rephoto"
+        android:scaleType="centerInside"
+         android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

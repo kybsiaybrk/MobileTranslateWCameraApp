@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arkaplan"
+    tools:context=".presentation.AiActivity">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/anasayfatasarim1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnGoogleTranslate"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/googlelogo"
+            android:contentDescription="Google" />
+
+        <ImageButton
+            android:id="@+id/btnAzureTranslate"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/azure2"
+            android:contentDescription="DeepL Translate"
+            android:layout_marginStart="16dp" />
+
+
+
+        <ImageButton
+            android:id="@+id/btnDeepLTranslate"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/deepl2"
+            android:contentDescription="DeepL"
+            android:layout_marginStart="16dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/top_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
